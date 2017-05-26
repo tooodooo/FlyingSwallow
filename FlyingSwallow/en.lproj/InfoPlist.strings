@@ -1,0 +1,9 @@
+/* 
+  File.strings
+  FlyingSwallow
+
+  Created by 薛永胜 on 2017/5/26.
+  Copyright © 2017年 薛永胜. All rights reserved.
+*/
+CFBundleName = "Flying Swallow";
+CFBundleDisplayName = "Flying Swallow";

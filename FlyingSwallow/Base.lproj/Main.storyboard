@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="FlyingSwallow" customModuleProvider="target"/>
+                <menu id="aEJ-sm-gZZ">
+                    <items>
+                        <menuItem title="Lock Screen" id="4ZF-k9-mEK">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="lockScreen:" target="OM6-ND-ILD" id="UWc-5r-TwB"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Keep Awake" id="zGD-ps-y8D">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="keepAwake:" target="OM6-ND-ILD" id="XTK-fE-RxE"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Hide Desktop" id="yBr-aI-mqH">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="hideDesktop:" target="OM6-ND-ILD" id="swI-6T-LYX"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Show All File" id="o4a-Rh-0hN">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="showHiddenFile:" target="OM6-ND-ILD" id="dLe-hZ-p4a"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Disable Microphone" id="KvX-or-tQz">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="muteMic:" target="OM6-ND-ILD" id="a8a-El-sQS"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="tt2-rf-EiV"/>
+                        <menuItem title="Launch At Login" id="MUB-9k-zib">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="launchAtLogin:" target="OM6-ND-ILD" id="WLW-n7-JX9"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="7rG-Hv-D0p"/>
+                        <menuItem title="Quit" id="NcD-9j-41V">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quitApp:" target="OM6-ND-ILD" id="znE-Yc-UmR"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="OM6-ND-ILD" id="U5h-ys-imJ"/>
+                    </connections>
+                </menu>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="OM6-ND-ILD" customClass="StatusMenuController" customModule="FlyingSwallow" customModuleProvider="target">
+                    <connections>
+                        <outlet property="hideDesktopItem" destination="yBr-aI-mqH" id="7Nq-QA-2hN"/>
+                        <outlet property="keepAwakeItem" destination="zGD-ps-y8D" id="CCQ-X7-7Gx"/>
+                        <outlet property="launchMenuItem" destination="MUB-9k-zib" id="kcO-Vw-VjK"/>
+                        <outlet property="muteMicItem" destination="KvX-or-tQz" id="UzX-8a-mH7"/>
+                        <outlet property="showAllFileItem" destination="o4a-Rh-0hN" id="O5f-HG-HWw"/>
+                        <outlet property="statusMenu" destination="aEJ-sm-gZZ" id="HRq-nY-v3R"/>
+                    </connections>
+                </customObject>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6"/>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="ELu-mp-q3e">
+            <objects>
+                <windowController id="bPc-9I-lgy" customClass="RecAudioWindowController" customModule="FlyingSwallow" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" oneShot="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="AaK-Uv-buP">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="860" y="688" width="400" height="70"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+                    </window>
+                </windowController>
+                <customObject id="e8W-6t-0Cd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="etI-Yj-uqO"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="315"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		806D3ACF1ED7277900A8A7E1 /* HideDesktopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3ACE1ED7277900A8A7E1 /* HideDesktopService.swift */; };
+		806D3AD11ED7321E00A8A7E1 /* ShowHiddenFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3AD01ED7321E00A8A7E1 /* ShowHiddenFileService.swift */; };
+		806D3AD41ED7383100A8A7E1 /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 806D3AD31ED7383100A8A7E1 /* Mixer.m */; };
+		806D3AD61ED7389100A8A7E1 /* MuteMicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3AD51ED7389100A8A7E1 /* MuteMicService.swift */; };
+		806D3ADB1ED74D1800A8A7E1 /* DefaultInput.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 806D3ADA1ED74D1800A8A7E1 /* DefaultInput.applescript */; };
+		8076229A1ED797D10091E49A /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807622991ED797D10091E49A /* LaunchAtLoginService.swift */; };
+		807965C51ED5EBF600A7C543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807965C41ED5EBF600A7C543 /* AppDelegate.swift */; };
+		807965C71ED5EBF600A7C543 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807965C61ED5EBF600A7C543 /* StatusMenuController.swift */; };
+		807965C91ED5EBF600A7C543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807965C81ED5EBF600A7C543 /* Assets.xcassets */; };
+		8092A7521ED762A70021210F /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8092A7511ED762A70021210F /* AppleScriptObjC.framework */; };
+		8092A7541ED763EE0021210F /* ASObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8092A7531ED763EE0021210F /* ASObjC.m */; };
+		80A458D21ED6F6EF00F91F11 /* KeepAwakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A458D11ED6F6EF00F91F11 /* KeepAwakeService.swift */; };
+		80A458D61ED6F90400F91F11 /* KeepAwakeServiceOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A458D51ED6F90400F91F11 /* KeepAwakeServiceOC.m */; };
+		80B4CF4F1ED606750008B82B /* LockScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B4CF4E1ED606750008B82B /* LockScreenService.swift */; };
+		80B4CF571ED6D3740008B82B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B4CF561ED6D3740008B82B /* AppDelegate.swift */; };
+		80B4CF5B1ED6D3740008B82B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B4CF5A1ED6D3740008B82B /* Assets.xcassets */; };
+		80B4CF5E1ED6D3740008B82B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B4CF5C1ED6D3740008B82B /* Main.storyboard */; };
+		80B4CF641ED6D9690008B82B /* FlyingSwallowHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80B4CF541ED6D3740008B82B /* FlyingSwallowHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80C85C811ED83EF900E08CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C85C831ED83EF900E08CDD /* Main.storyboard */; };
+		80C85C931ED8409500E08CDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C85C951ED8409500E08CDD /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80B4CF631ED6D92C0008B82B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				80B4CF641ED6D9690008B82B /* FlyingSwallowHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		804611071ED842A600F27170 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806D3ACE1ED7277900A8A7E1 /* HideDesktopService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideDesktopService.swift; sourceTree = "<group>"; };
+		806D3AD01ED7321E00A8A7E1 /* ShowHiddenFileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHiddenFileService.swift; sourceTree = "<group>"; };
+		806D3AD21ED7383100A8A7E1 /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
+		806D3AD31ED7383100A8A7E1 /* Mixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixer.m; sourceTree = "<group>"; };
+		806D3AD51ED7389100A8A7E1 /* MuteMicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuteMicService.swift; sourceTree = "<group>"; };
+		806D3ADA1ED74D1800A8A7E1 /* DefaultInput.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultInput.applescript; sourceTree = "<group>"; };
+		806D3ADC1ED7524400A8A7E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		80704D251ED85C1700E29B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80704D2B1ED85CAC00E29B05 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		80704D2D1ED85CB100E29B05 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		80704D2F1ED85DBE00E29B05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		807622991ED797D10091E49A /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
+		807965C11ED5EBF600A7C543 /* FlyingSwallow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingSwallow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		807965C41ED5EBF600A7C543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		807965C61ED5EBF600A7C543 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		807965C81ED5EBF600A7C543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8092A7511ED762A70021210F /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		8092A7531ED763EE0021210F /* ASObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASObjC.m; sourceTree = "<group>"; };
+		8092A7551ED763FD0021210F /* ASObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASObjC.h; sourceTree = "<group>"; };
+		80A458D11ED6F6EF00F91F11 /* KeepAwakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAwakeService.swift; sourceTree = "<group>"; };
+		80A458D41ED6F90400F91F11 /* FlyingSwallow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyingSwallow-Bridging-Header.h"; sourceTree = "<group>"; };
+		80A458D51ED6F90400F91F11 /* KeepAwakeServiceOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepAwakeServiceOC.m; sourceTree = "<group>"; };
+		80A458D71ED6F93A00F91F11 /* KeepAwakeServiceOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepAwakeServiceOC.h; sourceTree = "<group>"; };
+		80B4CF4E1ED606750008B82B /* LockScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockScreenService.swift; sourceTree = "<group>"; };
+		80B4CF541ED6D3740008B82B /* FlyingSwallowHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingSwallowHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B4CF561ED6D3740008B82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80B4CF5A1ED6D3740008B82B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80B4CF5D1ED6D3740008B82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80B4CF5F1ED6D3740008B82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C85C941ED8409500E08CDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80C85C961ED8409600E08CDD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		80C85C971ED8409700E08CDD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		807965BE1ED5EBF600A7C543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8092A7521ED762A70021210F /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B4CF511ED6D3740008B82B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8034C8571ED7866F00F424F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				807965C41ED5EBF600A7C543 /* AppDelegate.swift */,
+				807965C61ED5EBF600A7C543 /* StatusMenuController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8034C8581ED7868000F424F8 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				804611071ED842A600F27170 /* Info.plist */,
+				807965C81ED5EBF600A7C543 /* Assets.xcassets */,
+				80A458D41ED6F90400F91F11 /* FlyingSwallow-Bridging-Header.h */,
+				80C85C831ED83EF900E08CDD /* Main.storyboard */,
+				80C85C951ED8409500E08CDD /* InfoPlist.strings */,
+			);
+			name = Resouce;
+			sourceTree = "<group>";
+		};
+		806D3AD71ED74BCE00A8A7E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8092A7511ED762A70021210F /* AppleScriptObjC.framework */,
+				806D3ADC1ED7524400A8A7E1 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		807965B81ED5EBF600A7C543 = {
+			isa = PBXGroup;
+			children = (
+				807965C31ED5EBF600A7C543 /* FlyingSwallow */,
+				80B4CF551ED6D3740008B82B /* FlyingSwallowHelper */,
+				807965C21ED5EBF600A7C543 /* Products */,
+				806D3AD71ED74BCE00A8A7E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		807965C21ED5EBF600A7C543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				807965C11ED5EBF600A7C543 /* FlyingSwallow.app */,
+				80B4CF541ED6D3740008B82B /* FlyingSwallowHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		807965C31ED5EBF600A7C543 /* FlyingSwallow */ = {
+			isa = PBXGroup;
+			children = (
+				8034C8571ED7866F00F424F8 /* Main */,
+				80B4CF4D1ED606500008B82B /* Service */,
+				8034C8581ED7868000F424F8 /* Resouce */,
+			);
+			path = FlyingSwallow;
+			sourceTree = "<group>";
+		};
+		80A458D31ED6F8E100F91F11 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				806D3ADA1ED74D1800A8A7E1 /* DefaultInput.applescript */,
+				806D3AD21ED7383100A8A7E1 /* Mixer.h */,
+				806D3AD31ED7383100A8A7E1 /* Mixer.m */,
+				80A458D71ED6F93A00F91F11 /* KeepAwakeServiceOC.h */,
+				80A458D51ED6F90400F91F11 /* KeepAwakeServiceOC.m */,
+				8092A7551ED763FD0021210F /* ASObjC.h */,
+				8092A7531ED763EE0021210F /* ASObjC.m */,
+			);
+			name = OC;
+			sourceTree = "<group>";
+		};
+		80B4CF4D1ED606500008B82B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80A458D31ED6F8E100F91F11 /* OC */,
+				807622991ED797D10091E49A /* LaunchAtLoginService.swift */,
+				80B4CF4E1ED606750008B82B /* LockScreenService.swift */,
+				80A458D11ED6F6EF00F91F11 /* KeepAwakeService.swift */,
+				806D3ACE1ED7277900A8A7E1 /* HideDesktopService.swift */,
+				806D3AD01ED7321E00A8A7E1 /* ShowHiddenFileService.swift */,
+				806D3AD51ED7389100A8A7E1 /* MuteMicService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		80B4CF551ED6D3740008B82B /* FlyingSwallowHelper */ = {
+			isa = PBXGroup;
+			children = (
+				80B4CF561ED6D3740008B82B /* AppDelegate.swift */,
+				80B4CF5A1ED6D3740008B82B /* Assets.xcassets */,
+				80B4CF5C1ED6D3740008B82B /* Main.storyboard */,
+				80B4CF5F1ED6D3740008B82B /* Info.plist */,
+			);
+			path = FlyingSwallowHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		807965C01ED5EBF600A7C543 /* FlyingSwallow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 807965D01ED5EBF600A7C543 /* Build configuration list for PBXNativeTarget "FlyingSwallow" */;
+			buildPhases = (
+				807965BD1ED5EBF600A7C543 /* Sources */,
+				807965BE1ED5EBF600A7C543 /* Frameworks */,
+				807965BF1ED5EBF600A7C543 /* Resources */,
+				80B4CF631ED6D92C0008B82B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyingSwallow;
+			productName = FlyingSwallow;
+			productReference = 807965C11ED5EBF600A7C543 /* FlyingSwallow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80B4CF531ED6D3740008B82B /* FlyingSwallowHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80B4CF601ED6D3740008B82B /* Build configuration list for PBXNativeTarget "FlyingSwallowHelper" */;
+			buildPhases = (
+				80B4CF501ED6D3740008B82B /* Sources */,
+				80B4CF511ED6D3740008B82B /* Frameworks */,
+				80B4CF521ED6D3740008B82B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyingSwallowHelper;
+			productName = FlyingSwallowHelper;
+			productReference = 80B4CF541ED6D3740008B82B /* FlyingSwallowHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		807965B91ED5EBF600A7C543 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "薛永胜";
+				TargetAttributes = {
+					807965C01ED5EBF600A7C543 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KM258HX33D;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					80B4CF531ED6D3740008B82B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KM258HX33D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 807965BC1ED5EBF600A7C543 /* Build configuration list for PBXProject "FlyingSwallow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 807965B81ED5EBF600A7C543;
+			productRefGroup = 807965C21ED5EBF600A7C543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				807965C01ED5EBF600A7C543 /* FlyingSwallow */,
+				80B4CF531ED6D3740008B82B /* FlyingSwallowHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		807965BF1ED5EBF600A7C543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C85C811ED83EF900E08CDD /* Main.storyboard in Resources */,
+				807965C91ED5EBF600A7C543 /* Assets.xcassets in Resources */,
+				80C85C931ED8409500E08CDD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B4CF521ED6D3740008B82B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B4CF5B1ED6D3740008B82B /* Assets.xcassets in Resources */,
+				80B4CF5E1ED6D3740008B82B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		807965BD1ED5EBF600A7C543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806D3AD41ED7383100A8A7E1 /* Mixer.m in Sources */,
+				80B4CF4F1ED606750008B82B /* LockScreenService.swift in Sources */,
+				806D3AD61ED7389100A8A7E1 /* MuteMicService.swift in Sources */,
+				80A458D21ED6F6EF00F91F11 /* KeepAwakeService.swift in Sources */,
+				807965C71ED5EBF600A7C543 /* StatusMenuController.swift in Sources */,
+				8092A7541ED763EE0021210F /* ASObjC.m in Sources */,
+				807965C51ED5EBF600A7C543 /* AppDelegate.swift in Sources */,
+				806D3AD11ED7321E00A8A7E1 /* ShowHiddenFileService.swift in Sources */,
+				80A458D61ED6F90400F91F11 /* KeepAwakeServiceOC.m in Sources */,
+				806D3ADB1ED74D1800A8A7E1 /* DefaultInput.applescript in Sources */,
+				8076229A1ED797D10091E49A /* LaunchAtLoginService.swift in Sources */,
+				806D3ACF1ED7277900A8A7E1 /* HideDesktopService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B4CF501ED6D3740008B82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B4CF571ED6D3740008B82B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80B4CF5C1ED6D3740008B82B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B4CF5D1ED6D3740008B82B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80C85C831ED83EF900E08CDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80704D251ED85C1700E29B05 /* Base */,
+				80704D2B1ED85CAC00E29B05 /* zh-Hans */,
+				80704D2D1ED85CB100E29B05 /* zh-Hant */,
+				80704D2F1ED85DBE00E29B05 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80C85C951ED8409500E08CDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C85C941ED8409500E08CDD /* en */,
+				80C85C961ED8409600E08CDD /* zh-Hans */,
+				80C85C971ED8409700E08CDD /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		807965CE1ED5EBF600A7C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		807965CF1ED5EBF600A7C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		807965D11ED5EBF600A7C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KM258HX33D;
+				INFOPLIST_FILE = FlyingSwallow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.realsnow.mac.swallow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlyingSwallow/FlyingSwallow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		807965D21ED5EBF600A7C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KM258HX33D;
+				INFOPLIST_FILE = FlyingSwallow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.realsnow.mac.swallow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FlyingSwallow/FlyingSwallow-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		80B4CF611ED6D3740008B82B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FlyingSwallowHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.realsnow.mac.flyingswallowhelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80B4CF621ED6D3740008B82B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FlyingSwallowHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.realsnow.mac.flyingswallowhelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		807965BC1ED5EBF600A7C543 /* Build configuration list for PBXProject "FlyingSwallow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807965CE1ED5EBF600A7C543 /* Debug */,
+				807965CF1ED5EBF600A7C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		807965D01ED5EBF600A7C543 /* Build configuration list for PBXNativeTarget "FlyingSwallow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807965D11ED5EBF600A7C543 /* Debug */,
+				807965D21ED5EBF600A7C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80B4CF601ED6D3740008B82B /* Build configuration list for PBXNativeTarget "FlyingSwallowHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B4CF611ED6D3740008B82B /* Debug */,
+				80B4CF621ED6D3740008B82B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 807965B91ED5EBF600A7C543 /* Project object */;
+}

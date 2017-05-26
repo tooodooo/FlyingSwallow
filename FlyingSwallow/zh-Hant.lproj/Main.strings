@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "Lock Screen"; ObjectID = "4ZF-k9-mEK"; */
+"4ZF-k9-mEK.title" = "鎖定螢幕";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "AaK-Uv-buP"; */
+"AaK-Uv-buP.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Disable Microphone"; ObjectID = "KvX-or-tQz"; */
+"KvX-or-tQz.title" = "禁用麥克風";
+
+/* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "MUB-9k-zib"; */
+"MUB-9k-zib.title" = "開機自啟動";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "NcD-9j-41V"; */
+"NcD-9j-41V.title" = "退出";
+
+/* Class = "NSMenuItem"; title = "Show All File"; ObjectID = "o4a-Rh-0hN"; */
+"o4a-Rh-0hN.title" = "顯示隱藏文件";
+
+/* Class = "NSMenuItem"; title = "Hide Desktop"; ObjectID = "yBr-aI-mqH"; */
+"yBr-aI-mqH.title" = "隱藏桌面";
+
+/* Class = "NSMenuItem"; title = "Keep Awake"; ObjectID = "zGD-ps-y8D"; */
+"zGD-ps-y8D.title" = "禁止休眠";
