@@ -3,7 +3,7 @@
 
 [中文](https://github.com/tooodooo/FlyingSwallow/blob/master/README-CN.md)
 
-A little toolbox application write in SWIFT for Mac OS X.
+A application written by Swift, a key operation commonly used functions.
 
 ## Download
 [v1.0 release](https://github.com/tooodooo/FlyingSwallow/releases/download/v1.0/FlyingSwallow-V1.0.dmg)
