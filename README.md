@@ -8,6 +8,9 @@
 
 require OS X 10.10 or higher
 
+## 屏幕截图
+![logo](https://github.com/tooodooo/FlyingSwallow/blob/master/screenshot.jpg?raw=true)
+
 ## 功能
 * 锁定屏幕：关闭屏幕并立即进入锁定状态，唤醒需要输入密码。
 * 禁止休眠：禁止电脑进入睡眠状态
